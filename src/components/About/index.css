@@ -1,0 +1,38 @@
+/* Write your CSS here */
+.about-route-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-image-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.sm-image {
+  height: 300px;
+  width: 80%;
+  max-width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .sm-image {
+    display: none;
+  }
+}
+
+.lg-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .lg-image {
+    display: block;
+    width: 100%;
+    max-width: 1110px;
+  }
+}
